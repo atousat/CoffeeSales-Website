@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html  lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Coffee Sales Website/Login</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header" >
+            <nav class="nav bd-container">
+                <div>
+				    <a href="#" class="nav__logo" >Coffee</a>
+				    <a href="login.html" class="icon-bar"><i class='bx bxs-user-account bx-xs bx-tada-hover'></i></a>
+				    <a href="cart.html" class="icon-bar"><i class='bx bx-shopping-bag bx-xs bx-tada-hover'></i></a>
+					<a href="#" class="icon-bar"><i class='bx bx-search-alt bx-xs bx-tada-hover'></i></a>
+				</div>
+
+                <div class="nav__menu" id="nav-menu" >
+                    <ul class="nav__list" >
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">تماس با ما</a></li>
+						<li class="nav__item"><a href="index.html#blogs" class="nav__link">بلاگ</a></li>
+						<li class="nav__item"><a href="products.html" class="nav__link">محصولات</a></li>
+						<li class="nav__item"><a href="index.html#about" class="nav__link">درباره ما </a></li>
+						<li class="nav__item"><a href="index.html#home" class="nav__link active-link">صفحه اصلی</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+		
+        <!--========== LOGIN ==========-->
+		<div class="wrapper">
+            <div class="title-text">
+                <div class="title login">صفحه ورود</div>
+                <div class="title signup">فرم ثبت نام</div>
+            </div>
+            <div class="form-container">
+                <div class="slide-controls">
+                    <input type="radio" name="slide" id="login" checked>
+                    <input type="radio" name="slide" id="signup">
+                    <label for="login" class="slide login">ورود</label>
+                    <label for="signup" class="slide signup">ثبت نام</label>
+                    <div class="slider-tab"></div>
+                </div>
+                <div class="form-inner">
+                    <form action="#" class="login">
+                        <div class="field">
+                            <input type="text" placeholder="ایمیل" required dir="rtl">
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="پسورد" required dir="rtl">
+                        </div>
+                        <div class="pass-link" dir="rtl"><a href="#">رمز عبور خود را فراموش کرده اید؟</a></div>
+					
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                                <input type="submit" value="ورود">
+                            </div>
+                        <div class="signup-link">عضو سایت نیستید؟ <a href="">ثبت نام</a></div>
+                    </form>
+                    <form action="#" class="signup">
+                        <div class="field">
+                            <input type="text" placeholder="ایمیل" required dir="rtl">
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="پسورد" required dir="rtl">
+                        </div>
+                        <div class="field">
+                            <input type="password" placeholder="تایید پسورد" required dir="rtl">
+                        </div>
+                        <div class="field btn">
+                            <div class="btn-layer"></div>
+                            <input type="submit" onclick="alert('ثبته نام با موفقیت انجام شد!')" value="ثبت نام">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+	   </main>
+	
+	
+	
+	    <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container" dir="rtl">
+            <div class="footer__container bd-grid">
+
+                <div class="footer__content">
+                    <h3 class="footer__title"> خدمات مشتریان</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">ارسال سریع</a></li>
+                        <li><a href="#" class="footer__link">حریم خصوصی</a></li>
+                        <li><a href="#" class="footer__link">پاسخ به پرسش های متداول</a></li>
+                        <li><a href="#" class="footer__link">امکان بازگشت کالا تا 24 ساعت</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">اطلاعات</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">درباره ما </a></li>
+                        <li><a href="#" class="footer__link">تماس با ما  </a></li>
+                        <li><a href="#" class="footer__link">فروشگاه ها</a></li>
+                        <li><a href="#" class="footer__link">قوانین و مقررات</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">ادرس</h3>
+                    <ul>
+                        <li>خرم اباد </li>
+                        <li>خیابان مطهری </li>
+                        <li>06633235544</li>
+                        <li>coffee.store@email.com</li>
+                    </ul>
+                </div>
+				
+				<div class="footer__content" dir="ltr">
+                    <a href="#" class="footer__logo">Coffee</a>
+                    <span class="footer__description">Store</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-telegram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

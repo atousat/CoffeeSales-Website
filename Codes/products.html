@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html  lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Coffee Sales Website/Products</title>
+    </head>
+    <body>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header" >
+            <nav class="nav bd-container">
+                <div>
+				    <a href="#" class="nav__logo" >Coffee</a>
+				    <a href="login.html" class="icon-bar"><i class='bx bxs-user-account bx-xs bx-tada-hover'></i></a>
+				    <a href="cart.html" class="icon-bar"><i class='bx bx-shopping-bag bx-xs bx-tada-hover'></i></a>
+					<a href="#" class="icon-bar"><i class='bx bx-search-alt bx-xs bx-tada-hover'></i></a>
+				</div>
+
+                <div class="nav__menu" id="nav-menu" >
+                    <ul class="nav__list" >
+                        <li class="nav__item"><a href="index.html#contact" class="nav__link">تماس با ما</a></li>
+						<li class="nav__item"><a href="index.html#blogs" class="nav__link">بلاگ</a></li>
+						<li class="nav__item"><a href="index.html#products" class="nav__link">محصولات</a></li>
+						<li class="nav__item"><a href="index.html#about" class="nav__link">درباره ما </a></li>
+						<li class="nav__item"><a href="index.html#home" class="nav__link active-link">صفحه اصلی</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+		
+        <!--========== PRODUCTS ==========-->
+            <section class="products section bd-container" id="products">
+			
+			<form class="list" dir="rtl">
+                <div class="item">
+                    <label for="sort-by">مرتب سازی بر اساس</label>
+                    <select name="sort-by" id="sort-by" class="list-item">
+                        <option value="title" selected="selected">برند</option>
+                        <option value="number">قیمت</option>
+                        <option value="search_api_relevance">پرفروش ها</option>
+                    </select>
+					<a href="#" class="button search__button">جست و جو</a>
+               </div>
+            </form>
+			
+                <div class="products__container bd-grid">
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product1.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl"> دانه قهوه اسپرسو بلوند استارباکس </h3>
+                        <span class="products__detail">200 g  </span>
+                        <span class="products__preci">197.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product2.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl">دانه قهوه پایک پلیس استارباکس</h3>
+                        <span class="products__detail">200 g </span>
+                        <span class="products__preci">299.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="products__content">
+					    <a href="productDetails.html">
+                        <img src="assets/img/Product3.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl"> پودر قهوه هاوس بلند استار باکس</h3>
+                        <span class="products__detail"> 200 g </span>
+                        <span class="products__preci">223.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+				
+				<div class="products__container bd-grid">
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product4.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl">  قهوه ترک تازه برشت بن مانو </h3>
+                        <span class="products__detail">250 g  </span>
+                        <span class="products__preci">49.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product5.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl">قهوه فرانسه بن مانو 100% عربیکا </h3>
+                        <span class="products__detail">250 g </span>
+                        <span class="products__preci">79.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="products__content">
+					    <a href="productDetails.html">
+                        <img src="assets/img/Product6.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl">قهوه اسپرسو ویسرو بن مانو</h3>
+                        <span class="products__detail">  1 kg</span>
+                        <span class="products__preci">184.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+				
+				<div class="products__container bd-grid">
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product7.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl"> پودر قهوه لاواتزا </h3>
+                        <span class="products__detail">250 g </span>
+                        <span class="products__preci">184.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product8.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl"> کپسول قهوه استارباکس </h3>
+                        <span class="products__detail">10 numbers  </span>
+                        <span class="products__preci">69.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="products__content">
+					    <a href="#">
+                        <img src="assets/img/Product9.png" alt="" class="products__img"></a>
+                        <h3 class="products__name" dir="rtl">قهوه فوری گلد نسکافه</h3>
+                        <span class="products__detail"> 190 g</span>
+                        <span class="products__preci">137.000</span>
+                        <a href="#" class="button products__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+				<ul class="next__button">
+					<a href="#" class="button next__button"> << </a>
+					<a href="#" class="button next__button">2</a>
+					<a href="#" class="button next__button">1</a>
+				</ul>
+
+            </section>
+		</main>
+
+		
+		
+		<!--========== FOOTER ==========-->
+        <footer class="footer section bd-container" dir="rtl">
+            <div class="footer__container bd-grid">
+
+                <div class="footer__content">
+                    <h3 class="footer__title"> خدمات مشتریان</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">ارسال سریع</a></li>
+                        <li><a href="#" class="footer__link">حریم خصوصی</a></li>
+                        <li><a href="#" class="footer__link">پاسخ به پرسش های متداول</a></li>
+                        <li><a href="#" class="footer__link">امکان بازگشت کالا تا 24 ساعت</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">اطلاعات</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">درباره ما </a></li>
+                        <li><a href="#" class="footer__link">تماس با ما  </a></li>
+                        <li><a href="#" class="footer__link">فروشگاه ها</a></li>
+                        <li><a href="#" class="footer__link">قوانین و مقررات</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">ادرس</h3>
+                    <ul>
+                        <li>خرم اباد </li>
+                        <li>خیابان مطهری </li>
+                        <li>06633235544</li>
+                        <li>coffee.store@email.com</li>
+                    </ul>
+                </div>
+				
+				<div class="footer__content" dir="ltr">
+                    <a href="#" class="footer__logo">Coffee</a>
+                    <span class="footer__description">Store</span>
+                    <div>
+                        <a href="#" class="footer__social"><i class='bx bxl-telegram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>   
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
